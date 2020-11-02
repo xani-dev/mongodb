@@ -34,7 +34,7 @@ app.use((req, res) => res.sendStatus(404));
  * express error handler
  * @see https://expressjs.com/en/guide/error-handling.html#writing-error-handlers
  */
-// eslint-disable-next-line no-unused-vars
+
 app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',
