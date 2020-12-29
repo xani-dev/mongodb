@@ -19,7 +19,7 @@
     "express": "^4.16.3",
     "mongoose": "^5.7.3",
     "node-fetch": "^2.3.0",
-    "pg": "^7.12.1",
+    "pg": "^8.5.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-hot-loader": "^4.6.3",

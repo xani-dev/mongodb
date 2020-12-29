@@ -93,6 +93,9 @@ const CreateCharacter = props => {
       })
         .then(resp => resp.json())
         .then(data => {
+          console.log(data);
+        })
+        .then(() => {
           props.history.push('/');
         })
         .catch(err => console.log('CreateCharacter fetch /api/character: ERROR: ', err));
