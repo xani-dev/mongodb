@@ -103,7 +103,7 @@ You do not need to modify any frontend code, only the backend, but feel free to 
 #### Set up / Install
 1. [ ] Make sure you have committed your work from working on pg above. Then we will switch to a branch set up for this part by running the command `git checkout mongoose` in your terminal.
 1. [ ] Install the MongoDB Community edition by following the instructions on the links below.
-   * [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/) - select your distro (Ubuntu users can select Debian)
+   * [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/) - select your distro
    * [MacOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) - must have homebrew
    * [Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
    * You can check to make sure the CLI is installed by typing `mongo --version` in a terminal.
