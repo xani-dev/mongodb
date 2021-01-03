@@ -171,7 +171,7 @@ You do not need to modify any frontend code, only the backend, but feel free to 
         | homeworld_id    | ObjectId referencing 'planet'  |
         | height          | Number                         |
         | films           | Array of objects with keys: title (String), id (ObjectId referencing 'film') |
-1. [ ] Notice at the bottom of the file that we are exporting all the created models from this file in an object that will be required in the controller file.
+1. [ ] Notice at the bottom of the file that we are exporting the created Species model from this file in an object that will be required in the controller file. Uncomment the others as you go along so they can be exported as well!
 
 #### Get and serve characters
 1. [ ] The setup here is similar to Part 1. On load, the frontend makes a GET request to `/api/` to get an array of characters. Check out the route handlers are in the `server/routes/api.js` file and controllers are in the `server/controllers/starWarsController.js` file.

@@ -51,7 +51,7 @@ const Species = mongoose.model('species', speciesSchema);
 // exports all the models in an object to be used in the controller
 module.exports = {
   Species,
-  Planet,
-  Film,
-  Person
+  // Planet,
+  // Film,
+  // Person
 };
