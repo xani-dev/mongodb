@@ -9,8 +9,8 @@ mongoose.connect(MONGO_URI, {
   // sets the name of the DB that our collections are part of
   dbName: 'starwars'
 })
-.then(()=>console.log('Connected to Mongo DB.'))
-.catch(err=>console.log(err));
+  .then(() => console.log('Connected to Mongo DB.'))
+  .catch(err => console.log(err));
 
 const Schema = mongoose.Schema;
 
@@ -51,7 +51,7 @@ const Species = mongoose.model('species', speciesSchema);
 // exports all the models in an object to be used in the controller
 module.exports = {
   Species,
-  Planet,
-  Film,
-  Person
-}
+  // Planet,
+  // Film,
+  // Person
+};
