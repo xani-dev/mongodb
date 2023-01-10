@@ -45,7 +45,7 @@ You do not need to modify any frontend code, only the backend, but feel free to 
    * [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/) - select your distro
    * [MacOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) - must have homebrew
    * [Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
-   * You can check to make sure the CLI is installed by typing `mongo --version` in a terminal.
+   * You can check to make sure the CLI is installed by typing `mongod --version` or `mongosh --version` in a terminal.
 1. [ ] Sign up for a MongoDB Atlas account [here](https://www.mongodb.com/cloud/atlas).
    * Choose a provider and region where the free tier is available and select that free tier. Be sure to opt out of any features like backups that will cost extra.
    * Go to your Cluster view and click on **CONNECT**.
