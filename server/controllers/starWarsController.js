@@ -3,33 +3,40 @@ const models = require('../models/starWarsModels');
 const starWarsController = {};
 
 starWarsController.getCharacters = (req, res, next) => {
-  // write code here
+	console.log('test');
+	// write code here
+	models.Person.find()
+		.then((result) => {
+			console.log(result);
+			res.locals = result;
+		})
+		.catch((err) => console.log(err.message));
 
-  next();
+	next();
 };
 
 starWarsController.getSpecies = (req, res, next) => {
-  // write code here
+	// write code here
 
-  next();
+	next();
 };
 
 starWarsController.getHomeworld = (req, res, next) => {
-  // write code here
+	// write code here
 
-  next();
+	next();
 };
 
 starWarsController.getFilm = (req, res, next) => {
-  // write code here
+	// write code here
 
-  next();
+	next();
 };
 
 starWarsController.addCharacter = (req, res, next) => {
-  // write code here
+	// write code here
 
-  next();
+	next();
 };
 
 module.exports = starWarsController;
