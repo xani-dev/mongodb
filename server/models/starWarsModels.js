@@ -67,10 +67,10 @@ const Film = mongoose.model('film', filmsSchema);
 
 // TODO: create a schema for 'person' and use it to create the model for it below
 const personSchema = new Schema({
-	name: {type: String, required: true},
-	mass: Number,
+	name: { type: String, required: true },
+	mass: String,
 	hair_color: String,
-	skin_color: Number,
+	skin_color: String,
 	eye_color: String,
 	birth_year: String,
 	gender: String,
@@ -89,8 +89,17 @@ const personSchema = new Schema({
 	height: Number,
 	// Array of objects with keys: title (String), id (ObjectId referencing 'film')
 	films: [
-		{ title: String },
-		{ id: { type: Schema.Types.ObjectId, ref: 'film' } },
+		{
+			title: {
+				type: String,
+				required: true,
+			},
+			id: {
+				type: Schema.Types.ObjectId,
+				ref: 'film',
+				required: true,
+			},
+		},
 	],
 });
 const Person = mongoose.model('person', personSchema);
@@ -99,5 +108,5 @@ module.exports = {
 	Species,
 	Planet,
 	Film,
-	Person
+	Person,
 };
